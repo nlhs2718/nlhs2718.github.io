@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FangSong', 'Iansui', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3b3b3b;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #195969;
+    color: #cccccc;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 26px;
+    font-family: 'Iansui';
+}
+
+.logo:hover {
+    color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Iansui';
+}
+
+nav a:hover {
+    color: #3498db;
+}
