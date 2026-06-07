@@ -51,23 +51,15 @@ nav a:hover {
 
 
 
-/* ==================== 獨立課表頁面樣式 ==================== */
+/*========================================================================*/
 
 section {
     padding: 5rem 2rem;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-    color: #0081e4;
-    position: relative;
-}
-
-/* 1. 主視覺區樣式 */
 .hero {
-    background: linear-gradient(135deg, #34495e, #2c3e50);
+    background: linear-gradient(45deg, #3f4f5b, #3a4966);
     color: white;
     padding: 7rem 2rem;
 }
@@ -76,6 +68,8 @@ section h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     letter-spacing: 2px;
+
+    font-size: 40px;
 }
 
 .hero p {
@@ -87,21 +81,22 @@ section h2 {
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.8rem 2rem;
-    background-color: #3498db; /* 按鈕藍色 */
+    background-color: #3498db;
     color: white;
-    text-decoration: none;
-    border-radius: 30px; /* 圓角按鈕 */
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /*底線*/
+    border-radius: 30px; 
+    font-size: 18px;
+    transition: background-color 0.2s ease, transform 0.15s ease;
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
-/* 滑鼠移到按鈕上的特效 */
 .hero-btn:hover {
-    background-color: #2980b9; /* 顏色變深 */
-    transform: scale(1.05);    /* 微放大 */
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
+
+
+/*=============課表=============*/
 
 .schedule-page {
     padding: 4rem 1rem;
