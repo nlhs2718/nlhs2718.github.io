@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #195969;
+    background-color: #005595;
     color: #cccccc;
     padding: 1rem 2rem;
 }
@@ -44,4 +44,126 @@ nav a {
 
 nav a:hover {
     color: #3498db;
+}
+
+
+
+
+
+
+/* ==================== 獨立課表頁面樣式 ==================== */
+
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #0081e4;
+    position: relative;
+}
+
+/* 1. 主視覺區樣式 */
+.hero {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: white;
+    padding: 7rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #3498db; /* 按鈕藍色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* 圓角按鈕 */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* 滑鼠移到按鈕上的特效 */
+.hero-btn:hover {
+    background-color: #2980b9; /* 顏色變深 */
+    transform: scale(1.05);    /* 微放大 */
+}
+
+.schedule-page {
+    padding: 4rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.schedule-page h2 {
+    margin-bottom: 2rem;
+    color: #008bf5;
+}
+
+/* 表格容器外框 */
+.table-container {
+    overflow-x: auto; /* 防止手機排版變形 */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'FangSong', 'Iansui', sans-serif;
+}
+
+/* 星期幾的表頭 */
+th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid #34495e;
+}
+
+/* 【正常狀況】：灰底白字 */
+td {
+    background-color: #7f8c8d; /* 灰底 */
+    color: #ffffff;            /* 白字 */
+    padding: 1.2rem;
+    border: 1px solid #95a5a6; /* 深灰框線，讓格子更明顯 */
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.2s;
+}
+
+/* 滑鼠移上去時稍微亮一點點，方便對齊 */
+td:hover {
+    background-color: #95a5a6;
+}
+
+/* 【特殊狀況】：調課、代課變成黃色字體 */
+td.special-class {
+    color: #f1c40f;            /* 亮黃色字體 */
+    font-weight: bold;
+}
+
+/* 調代課的 (代)、(調：...) 小字標註 */
+td.special-class .note {
+    display: block;            /* 讓標註自動換行換到下方 */
+    font-size: 0.85rem;        /* 縮小字體 */
+    margin-top: 0.3rem;
+    color: #f39c12;            /* 稍微深一點的橘黃色，確保在灰底上清晰可讀 */
 }
