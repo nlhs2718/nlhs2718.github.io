@@ -209,9 +209,10 @@ table {
 th {
     background-color: #2c3e50;
     color: rgb(207, 207, 207);
-    padding: 1.2rem;
+    padding: 1.2rem 0.5rem;
     font-weight: bold;
     font-size: 20px;
+    min-width: 120px;
     border: 1px solid #34495e;
 }
 
