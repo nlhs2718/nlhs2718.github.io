@@ -16,48 +16,28 @@
     </nav>  
 
     <main class="schedule-page">
-        <h2>班級功課表 Class Schedule</h2>
+        <h2>課表 Class Schedule</h2>
         
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
                         <th>節次</th>
-                        <th>一 (Mon)</th>
-                        <th>二 (Tue)</th>
-                        <th>三 (Wed)</th>
-                        <th>四 (Thu)</th>
-                        <th>五 (Fri)</th>
+                        <th class="th-day"></th>
+                        <th class="th-day"></th>
+                        <th class="th-day"></th>
+                        <th class="th-day"></th>
+                        <th class="th-day"></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>第一節</td>
-                        <td>國文</td>
-                        <td class="special-class">英文 <span class="note">(代)</span></td>
-                        <td>數學</td>
-                        <td>歷史</td>
-                        <td>物理</td>
-                    </tr>
-                    <tr>
-                        <td>第二節</td>
-                        <td>數學</td>
-                        <td>化學</td>
-                        <td>體育</td>
-                        <td class="special-class">地科 <span class="note">(調：(三4))</span></td>
-                        <td>國文</td>
-                    </tr>
-                    <tr>
-                        <td>第三節</td>
-                        <td>英文</td>
-                        <td>數學</td>
-                        <td>生物</td>
-                        <td>班會</td>
-                        <td>英文</td>
-                    </tr>
+                <tbody id="timetable-body">
+                    <!-->
+                    <!-->
                 </tbody>
             </table>
         </div>
     </main>
+
+    <script src="schedule.js"></script>
 </body>
 </html>

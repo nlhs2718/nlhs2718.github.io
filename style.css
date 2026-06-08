@@ -7,7 +7,7 @@
 
 body {
     background-color: #3b3b3b;
-    color: #cccccc;
+    color: rgb(207, 207, 207);
     line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #005595;
-    color: #cccccc;
+    color: rgb(207, 207, 207);
     padding: 1rem 2rem;
 }
 
@@ -36,7 +36,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(207, 207, 207);
     text-decoration: none;
     font-size: 20px;
     font-family: 'Iansui';
@@ -60,7 +60,7 @@ section {
 
 .hero {
     background: linear-gradient(45deg, #3f4f5b, #3a4966);
-    color: white;
+    color: rgb(207, 207, 207);
     padding: 7rem 2rem;
 }
 
@@ -82,7 +82,7 @@ section {
     margin-top: 1.5rem;
     padding: 0.8rem 2rem;
     background-color: #3498db;
-    color: white;
+    color: rgb(207, 207, 207);
     text-decoration: none; /*底線*/
     border-radius: 30px; 
     font-size: 18px;
@@ -96,6 +96,10 @@ section {
 }
 
 
+
+
+
+
 /*=============課表=============*/
 
 .schedule-page {
@@ -107,7 +111,7 @@ section {
 
 .schedule-page h2 {
     margin-bottom: 2rem;
-    color: #008bf5;
+    color: #3997e9;
 }
 
 /* 表格容器外框 */
@@ -123,42 +127,56 @@ table {
     font-family: 'FangSong', 'Iansui', sans-serif;
 }
 
-/* 星期幾的表頭 */
 th {
     background-color: #2c3e50;
-    color: white;
+    color: rgb(207, 207, 207);
     padding: 1.2rem;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     border: 1px solid #34495e;
 }
 
-/* 【正常狀況】：灰底白字 */
 td {
-    background-color: #7f8c8d; /* 灰底 */
-    color: #ffffff;            /* 白字 */
+    background-color: #7f8c8d;
+    color: rgb(207, 207, 207);
     padding: 1.2rem;
-    border: 1px solid #95a5a6; /* 深灰框線，讓格子更明顯 */
+    border: 1px solid #95a5a6; /* 深灰框線 */
     text-align: center;
     font-size: 20px;
     transition: background-color 0.2s;
 }
 
-/* 滑鼠移上去時稍微亮一點點，方便對齊 */
 td:hover {
     background-color: #95a5a6;
 }
 
-/* 【特殊狀況】：調課、代課變成黃色字體 */
 td.special-class {
-    color: #f1c40f;            /* 亮黃色字體 */
+    color: #b78d00;
     font-weight: bold;
 }
 
-/* 調代課的 (代)、(調：...) 小字標註 */
+.time-text {
+    display: inline-block;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 0.2rem;
+}
+
 td.special-class .note {
-    display: block;            /* 讓標註自動換行換到下方 */
-    font-size: 0.85rem;        /* 縮小字體 */
+    display: inline-block;
+    font-size: 0.85rem;
     margin-top: 0.3rem;
-    color: #f39c12;            /* 稍微深一點的橘黃色，確保在灰底上清晰可讀 */
+    color: #bd7a0e;
+}
+
+.lunch-break-row td {
+    background-color: #34495e; 
+    color: rgb(207, 207, 207);
+    font-weight: bold;
+    padding: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.lunch-break-row:hover td {
+    background-color: #34495e; 
 }
