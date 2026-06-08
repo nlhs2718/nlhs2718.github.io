@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const lunchTd = document.createElement('td');
                 lunchTd.colSpan = 6; // 橫跨全部 6 個欄位
-                lunchTd.innerHTML = `午休<br><span class="time-text">12:00~13:05</span>`;
+                lunchTd.innerHTML = `午休<br><span class="time-text">12:00-12:55</span>`;
                 
                 lunchTr.appendChild(lunchTd);
                 tbody.appendChild(lunchTr);

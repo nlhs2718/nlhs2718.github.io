@@ -132,22 +132,22 @@ th {
     color: rgb(207, 207, 207);
     padding: 1.2rem;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     border: 1px solid #34495e;
 }
 
 td {
-    background-color: #7f8c8d;
+    background-color: #436383;
     color: rgb(207, 207, 207);
     padding: 1.2rem;
-    border: 1px solid #95a5a6; /* 深灰框線 */
+    border: 1px solid #0a1a3c; /* 深灰框線 */
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
     transition: background-color 0.2s;
 }
 
 td:hover {
-    background-color: #95a5a6;
+    background-color: #4e7399;
 }
 
 td.special-class {
@@ -157,7 +157,7 @@ td.special-class {
 
 .time-text {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 16px;
     opacity: 0.75;
     margin-top: 0.2rem;
 }
