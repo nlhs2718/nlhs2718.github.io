@@ -17,9 +17,22 @@
 
     <main class="schedule-page">
         <h2>課表 Class Schedule</h2>
+
+        <div class="week-controls">
+            <button id="prev-week" class="week-btn">上一週</button>
+            <span id="week-display">載入中...</span>
+            <button id="next-week" class="week-btn">下一週</button>
+        </div>
+
+        <p></br></p>
         
         <div class="table-container">
-            <table>
+            <div id="loading-overlay" class="loading-box">
+                <div class="spinner"></div>
+                <p>課表載入中...</p>
+            </div>
+
+            <table id="schedule-table">
                 <thead>
                     <tr>
                         <th>節次</th>
